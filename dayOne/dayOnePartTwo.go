@@ -11,7 +11,6 @@ func (pt *PasswordEntry) AddPTwo(numToAdd int) {
 		pt.startingNumber -= 100
 		pt.password++
 	}
-	fmt.Println("Number added, new total:", pt.startingNumber)
 }
 
 func (pt *PasswordEntry) SubtractPTwo(numToSubtract int) {
@@ -20,7 +19,6 @@ func (pt *PasswordEntry) SubtractPTwo(numToSubtract int) {
 		pt.startingNumber += 100
 		pt.password++
 	}
-	fmt.Println("Number subtracted, new total:", pt.startingNumber)
 }
 
 func SolutionPTwo() int {

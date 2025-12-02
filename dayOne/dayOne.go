@@ -17,7 +17,6 @@ func (p *PasswordEntry) Add(numToAdd int) {
 	if p.startingNumber >= 100 {
 		p.startingNumber -= 100
 	}
-	fmt.Println("Number added, new total:", p.startingNumber)
 }
 
 func (p *PasswordEntry) Subtract(numToSubtract int) {
@@ -25,7 +24,6 @@ func (p *PasswordEntry) Subtract(numToSubtract int) {
 	if p.startingNumber < 0 {
 		p.startingNumber += 100
 	}
-	fmt.Println("Number subtracted, new total:", p.startingNumber)
 }
 
 func isCurrentRotationZero(passwordEntry PasswordEntry) bool {
